@@ -1,0 +1,22 @@
+Algoritmos de busqueda.
+
+Linear Search Code
+Seaching
+Now that we learned how to sort an array of data, a natural question that we might ask is: how do we search for a specific element in an array?
+
+Of course, we would want our array to be sorted first. Otherwise, the order of elements would be random, and we would have to search through the entire array, which is still possible using this specific searching algorithm. This is called Linear Search.
+
+Linear Search
+Simple enough. We just traverse through the entire array to search for an element. If the element is found, we return it. If not, we signal that it's not found.
+
+static void linearSearch(int[] lst, int v) {
+	int n = lst.length;
+	for (int i = 0; i < n; i++) {
+		if (lst[i] == v) {
+			System.out.println("found! It is at" + i);
+			return;
+		}
+	}
+	System.out.println("the element is not in the array");
+	return;
+}
